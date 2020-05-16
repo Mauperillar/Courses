@@ -1,0 +1,25 @@
+import javax.swing.JOptionPane;
+
+public class Matrix {
+
+	public static void main(String[] args) {
+		/*
+		 * int[] array = new int[5]; array[0] = 0; array[1] = 1; array[2] = 2; array[3]
+		 * = 3; array[4] = 4;
+		 * 
+		 * for (int i = 0; i < array.length; i++) { System.out.println(array[i]); }
+		 * 
+		 */
+
+		int[] array = new int[4];
+		for(int i=0; i<array.length; i++) {
+			array[i] = Integer.parseInt(JOptionPane.showInputDialog("Ingrese un entero"));
+		}
+
+		for (int element : array) {
+			System.out.println(array[element]);
+		}
+
+	}
+
+}

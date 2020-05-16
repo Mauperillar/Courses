@@ -1,0 +1,14 @@
+import java.math.BigInteger;
+
+import javax.swing.JOptionPane;
+
+public class WhileExcersiceFactorial {
+
+	public static void main(String[] args) {
+		BigInteger resultado = BigInteger.ONE;
+		resultado = resultado.subtract(BigInteger.ONE);
+		System.out.println(resultado);
+		
+	}
+
+}

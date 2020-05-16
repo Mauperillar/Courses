@@ -1,0 +1,13 @@
+package poo.empleado;
+
+public class Jefe extends Empleado{
+	private float incentivo;
+	
+	public Jefe(String name) {
+		super(name);
+	}
+	
+	public float getSalary() {
+		return incentivo + this.getSalary();
+	}
+}

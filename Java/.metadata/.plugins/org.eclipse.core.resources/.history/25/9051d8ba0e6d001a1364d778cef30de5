@@ -1,0 +1,16 @@
+
+public class definirTypeVars {
+	enum Talla {
+		MINI("S"),MEDIANO("M")
+		private String abreviatura;
+		private Talla(String abreviatura) {
+			this.abreviatura = abreviatura;
+		}
+	};
+	public static void main(String[] args) {
+		Talla s = Talla.S;
+		System.out.println(s);
+
+	}
+
+}

@@ -1,0 +1,27 @@
+
+public class DeclaracionDeOperadores {
+
+	public static void main(String[] args) {
+		
+		int b,c;
+		b = 2;
+		c= 2+b;
+		
+		//c++; //Incrementa 1
+		//c--; //Disminuye 1
+		//c += 6 //Incrementa 6
+		
+		final int constante = 7; //Definir una constante, por lo cual su valor no puede ser cambiado
+	
+		System.out.println(constante + c * b);
+		
+		double raiz = Math.sqrt(c);
+		double potencia = Math.pow(raiz,2);
+		double seno =  Math.sin(potencia);
+		int redondea = (int) Math.round(seno); //Transformar el tipo de dato que retorna a int (int) Refundición
+		System.out.println(redondea);
+		
+
+	}
+
+}

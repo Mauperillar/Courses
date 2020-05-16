@@ -1,0 +1,42 @@
+1584836468449	Rename type 'Matrix'
+1584907206548	Encapsulate field 'largo'
+1584907366023	Encapsulate field 'color'
+1584915582887	Encapsulate field 'climatizador'
+1584915613848	Encapsulate field 'asientos_cuero'
+1584920560101	Encapsulate field 'name'
+1584920567143	Encapsulate field 'sueldo'
+1584920576837	Encapsulate field 'upDay'
+1584920588152	Encapsulate field 'upYear'
+1584920594689	Encapsulate field 'upMonth'
+1584931399970	Encapsulate field 'id'
+1584935515757	Encapsulate field 'loadCapacity'
+1584935521656	Encapsulate field 'loadSize'
+1584935651414	Encapsulate field 'ctdRuedas'
+1584935657861	Encapsulate field 'sizeMotor'
+1584935663847	Encapsulate field 'ancho'
+1584935669171	Encapsulate field 'pesoPlataforma'
+1584935674467	Encapsulate field 'pesoTotal'
+1584936398845	Rename type 'UsoCoche'
+1584936940823	Move compilation units
+1584937117306	Move compilation units
+1584937124672	Delete element
+1584937156537	Rename package 'poo.Vehiculo'
+1584937460376	Move compilation unit
+1584937671123	Rename package 'poo.Empleado'
+1584942432541	Copy package
+1584942442675	Delete element
+1584942605964	Move compilation units
+1584942610536	Delete element
+1584942659759	Move compilation units
+1584942664712	Delete element
+1584943177441	Encapsulate field 'name'
+1584943184186	Encapsulate field 'edad'
+1584943864869	Encapsulate field 'id'
+1584944066628	Encapsulate field 'studyLevel'
+1585007295661	Rename type 'Empleado'
+1585102677026	Move file
+1585102700017	Move file
+1585102717958	Move file
+1585102746355	Move file
+1585109422590	Delete element
+1585111546058	Rename type 'Panel'

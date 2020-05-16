@@ -1,0 +1,30 @@
+import java.util.*;
+public class WhileExerciseAdivinaNum {
+
+	public static void main(String[] args) {
+		int aleatorio = (int) (Math.random()*100);
+		
+		Scanner entrada = new Scanner(System.in);
+		int intentos = 0;
+		
+		System.out.println("Adivina el número");
+		int numero = entrada.nextInt();
+		
+		while(numero != aleatorio) {
+			intentos++;
+			
+			if(numero>aleatorio) {
+				System.out.println("El número ingresado es mayor");
+				
+			}else {
+				System.out.println("El número ingresado es menor");
+			}
+			System.out.println("Adivina el número");
+			numero = entrada.nextInt();
+		}
+		
+		System.out.println("Perfecto, has adivinado el número "+ aleatorio 
+				+ "\nNúmero de intentos: "+intentos);
+	}
+
+}

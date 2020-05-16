@@ -1,0 +1,18 @@
+package poo;
+
+import javax.swing.JOptionPane;
+
+public class UsoCoche {
+
+	public static void main(String[] args) {
+		
+		Coche cars1 = new Coche(); //Instanciar una clase
+		cars1.setColor("White");
+		cars1.setAsientos_cuero(JOptionPane.YES_NO_OPTION==1);
+		cars1.setClimatizador(true);
+		
+		JOptionPane.showMessageDialog(null, cars1.getLargo(), "Hello", JOptionPane.INFORMATION_MESSAGE);
+
+	}
+
+}

@@ -1,0 +1,2 @@
+entities: Partes especificas de tu pantalla de las cuales no están implementadas en la librería ().
+usesCases: Algo muy especifico (Un requerimiento)

@@ -1,0 +1,18 @@
+package poo.empleado;
+
+public class Jefe extends Empleado{
+	private float incentivo;
+	
+	public Jefe(String name) {
+		super(name);
+	}
+	
+	public Jefe(String name, float sueldo, float incentivo, int altaContratoYear, int altaContratoMonth, int altaContratoDay) {		
+		super(name, sueldo, altaContratoYear,altaContratoMonth,altaContratoDay);
+		this.incentivo = incentivo;
+	}
+	
+	public float getSalary() {
+		return incentivo + super.getSalary();
+	}
+}

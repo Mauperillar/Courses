@@ -1,0 +1,41 @@
+package poo;
+
+import java.util.GregorianCalendar;
+
+public class UsoEmpleado {
+
+	public static void main(String[] args) {
+
+	}
+
+}
+
+class empleado {
+	private String name;
+	private float sueldo;
+	private GregorianCalendar altaContrato;
+
+	public empleado(String name, float sueldo, int altaContratoYear, int altaContratoMonth, int altaContratoDay) {
+		this.setName(name);
+		this.setSueldo(sueldo);
+		GregorianCalendar calendar = new GregorianCalendar(altaContratoYear, altaContratoMonth, altaContratoDay);
+		this.altaContrato = calendar.getTime();
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public float getSueldo() {
+		return sueldo;
+	}
+
+	public void setSueldo(float sueldo) {
+		this.sueldo = sueldo;
+	}
+
+}

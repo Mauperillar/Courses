@@ -1,0 +1,25 @@
+package graficos;
+
+import java.awt.Dimension;
+import java.awt.Toolkit;
+
+import javax.swing.*;
+
+public class CreateFrames {
+	public static void main(String[] args) {
+		Ventana ventana = new Ventana();
+	}
+}
+
+
+class Ventana extends JFrame{
+	public Ventana() {
+
+		setVisible(true);
+		setLocationRelativeTo(null); //Abrir ventana en el centro de la pantalla
+		setTitle("Mi primera ventana");
+		//setExtendedState(MAXIMIZED_BOTH);//Abrir ventana maximizada
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		
+	}
+}

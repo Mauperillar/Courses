@@ -1,0 +1,5 @@
+package poo.persona.empleado;
+
+public interface Jefes {
+
+}

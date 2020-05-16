@@ -1,0 +1,24 @@
+package poo.timer;
+
+import java.awt.event.ActionEvent;
+import java.util.Date;
+import javax.swing.Timer;
+
+
+public class PruebaTemporizador {
+
+	public static void main(String[] args) {
+		Timer miTemporizador = new Timer(5000, oyente);
+		miTemporizador.start();
+
+	}
+
+}
+
+
+class DameLaHora implements ActionListener{
+	public void actionPerformed(ActionEvent event) {
+		Date ahora = new Date();
+		System.out.println(ahora);
+	}
+}

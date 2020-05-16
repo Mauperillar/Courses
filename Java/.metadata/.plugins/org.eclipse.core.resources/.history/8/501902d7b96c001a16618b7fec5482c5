@@ -1,0 +1,55 @@
+package poo;
+
+public class Coche {
+	private int ctdRuedas;
+	private float sizeMotor;
+	private float largo;
+	private float ancho;
+	private float pesoPlataforma;
+	private String color;
+	private float pesoTotal = 0;
+	private boolean asientos_cuero, climatizador;
+
+	public Coche() {
+		ctdRuedas = 4;
+		setLargo(1500.2f);
+		ancho = 500.3f;
+		sizeMotor = 100.5f;
+		pesoPlataforma = 100.5f;
+	}
+
+	public float getLargo() {
+		return largo;
+	}
+
+	public void setLargo(float largo) {
+		this.largo = largo;
+	}
+
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+	public boolean isClimatizador() {
+		return climatizador;
+	}
+
+	public void setClimatizador(boolean climatizador) {
+		this.climatizador = climatizador;
+	}
+
+	public boolean isAsientos_cuero() {
+		return asientos_cuero;
+	}
+
+	public void setAsientos_cuero(boolean asientos_cuero) {
+		this.asientos_cuero = asientos_cuero;
+	}
+	
+	
+
+}

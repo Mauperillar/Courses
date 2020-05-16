@@ -1,0 +1,33 @@
+package graficos;
+
+import javax.swing.*;
+import java.awt.*;
+
+public class Panel_Graphics1 {
+
+	public static void main(String[] args) {
+		MarcoConTexto mimarco = new MarcoConTexto();
+
+	}
+
+}
+
+class MarcoConTexto extends JFrame{
+	public MarcoConTexto() {
+		setVisible(true);
+		setTitle("Frame con panel");
+		setSize(600,450);
+		setLocationRelativeTo(null);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		
+		Lamina fondo = new Lamina();
+		add(fondo);
+	}
+}
+
+class Lamina extends JPanel{
+	public void paintComponent(Graphics g) {
+		super.paintComponent(g);
+		g.drawString("Titulo", 300, 100);
+	}
+}

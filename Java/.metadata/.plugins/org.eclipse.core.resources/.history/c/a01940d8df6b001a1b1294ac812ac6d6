@@ -1,0 +1,19 @@
+
+public class Matrices {
+
+	public static void main(String[] args) {
+		
+		int[][] matrix = {{1,2},{1,2}};
+		
+		for(int fila=0; fila<matrix[0].length; fila++) {
+			for(int columna : matrix[fila]) {
+				
+				System.out.println(matrix[fila][columna]);
+			}
+		}
+		
+		
+		
+	}
+
+}

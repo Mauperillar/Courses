@@ -1,0 +1,10 @@
+
+public class definirTypeVars {
+	enum Talla {XS, SM, M, L, XL};
+	public static void main(String[] args) {
+		Talla s = Talla.SM;
+		System.out.println(s);
+
+	}
+
+}

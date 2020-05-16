@@ -1,0 +1,20 @@
+import java.math.BigInteger;
+
+import javax.swing.JOptionPane;
+
+public class WhileExcersiceFactorial {
+
+	public static void main(String[] args) {
+		BigInteger resultado = new BigInteger("1");
+		
+		BigInteger numero = new BigInteger(JOptionPane.showInputDialog("Indroduce némero"));
+		System.out.println(numero);
+		for(BigInteger i= numero; i.compareTo(BigInteger.ZERO) >0; i.subtract(BigInteger.ONE)) {
+			resultado = resultado.multiply(i);
+		}
+		
+		System.out.println("El factorial de " + numero + " es: "+ resultado);
+
+	}
+
+}

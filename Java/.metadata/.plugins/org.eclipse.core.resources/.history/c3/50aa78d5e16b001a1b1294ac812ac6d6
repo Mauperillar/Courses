@@ -1,0 +1,19 @@
+
+public class Matrices {
+
+	public static void main(String[] args) {
+
+		//int[][] matrix = { { 0, 1 }, { 2, 3 }, { 4, 5 ,5} };
+		int[][] matrix = new int[3][3];
+		
+		for (int fila = 0; fila < matrix.length; fila++) {
+			for (int columna : matrix[fila]) {
+				columna = (int) (Math.random()*100);
+				System.out.print((int) (Math.random()*100));
+			}
+		}
+		
+		
+	}
+
+}

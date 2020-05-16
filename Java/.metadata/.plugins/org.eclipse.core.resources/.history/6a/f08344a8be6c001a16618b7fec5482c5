@@ -1,0 +1,23 @@
+package poo.Empleado;
+
+public class UsoEmpleado {
+
+	public static void main(String[] args) {
+		
+		Empleado mauricio = new Empleado("Mauricio", 400000, 2022,12,02);
+		mauricio.raiseSalary(10, true);
+		System.out.println(mauricio.getSalary());
+		
+		Empleado[] misEmpleados = new Empleado[3];
+		misEmpleados[0] = new Empleado("Juan", 30000,2021,11,02);
+		misEmpleados[1] = new Empleado("Peter", 40000,2022,11,02);
+		misEmpleados[2] = new Empleado("Camilo", 30000,2021,11,02);
+
+		for(Empleado e: misEmpleados) {
+			System.out.println(e.getId());
+		}
+
+		
+	}
+
+}

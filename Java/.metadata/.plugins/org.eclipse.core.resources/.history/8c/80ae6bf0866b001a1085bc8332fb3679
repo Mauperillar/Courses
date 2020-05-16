@@ -1,0 +1,10 @@
+import javax.swing.JOptionPane;
+
+public class EntradaEjemplo2 {
+
+	public static void main(String[] args) {
+		String name_user = JOptionPane.showInputDialog("Introduce tu nombre");
+
+	}
+
+}

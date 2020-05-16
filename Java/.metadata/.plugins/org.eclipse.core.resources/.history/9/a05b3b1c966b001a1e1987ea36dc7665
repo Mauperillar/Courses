@@ -1,0 +1,10 @@
+import java.util.*;
+import javax.swing.*;
+public class IfExercerciseArea {
+	public static void main(String[] arg) {
+		Scanner entrada = new Scanner(System.in);
+		
+		System.out.println("Elige una opción \n1: Cuadrado \n2:Rectángulo \n3:Triángulo \n4:Circulo");
+	}
+
+}

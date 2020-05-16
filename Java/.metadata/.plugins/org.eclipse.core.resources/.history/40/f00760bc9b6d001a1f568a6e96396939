@@ -1,0 +1,18 @@
+package graficos;
+
+import javax.swing.*;
+
+public class CreateFrames {
+	public static void main(String[] args) {
+		Ventana ventana = new Ventana();
+	}
+}
+
+
+class Ventana extends JFrame{
+	public Ventana() {
+		setSize(500, 300);
+		setVisible(true);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+	}
+}

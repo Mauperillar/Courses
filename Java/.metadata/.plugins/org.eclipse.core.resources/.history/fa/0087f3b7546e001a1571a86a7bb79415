@@ -1,0 +1,23 @@
+package graficos;
+
+import java.awt.*;
+import javax.swing.*;
+
+public class Graphics2 {
+
+	public static void main(String[] args) {
+		MarcoConDibujos marco = new MarcoConDibujos();
+
+	}
+
+}
+
+class MarcoConDibujos extends JFrame{
+	public MarcoConDibujos() {
+		setVisible(true);
+		setTitle("Prueba con dibujos");
+		setSize(500,500);
+		setLocationRelativeTo(null);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+	}
+}

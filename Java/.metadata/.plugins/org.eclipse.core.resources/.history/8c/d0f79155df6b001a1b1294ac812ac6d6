@@ -1,0 +1,23 @@
+
+public class Matrices {
+
+	public static void main(String[] args) {
+		
+		int[][] matrix = new int[2][2];
+		
+		for(int fila=0; fila<matrix[0].length; fila++) {
+			for(int columna : matrix[fila]) {
+				matrix[fila][columna] = fila;
+			}
+		}
+		
+
+		for(int fila=0; fila<2; fila++) {
+			for(int columna=0; columna<2; columna++) {
+				System.out.println(matrix[fila][columna]);
+			}
+		}
+		
+	}
+
+}

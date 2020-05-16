@@ -1,0 +1,31 @@
+package poo;
+
+public class CarFurgoneta extends Coche{
+	private float loadCapacity;
+	private float loadSize;
+	
+	
+	public CarFurgoneta(float loadCapacity, float loadSize) {
+		super(); //Llamar al construcutor de la clase padre
+		this.loadCapacity = loadCapacity;
+		this.loadSize = loadSize;
+	}
+
+	public float getLoadCapacity() {
+		return loadCapacity;
+	}
+
+	public void setLoadCapacity(float loadCapacity) {
+		this.loadCapacity = loadCapacity;
+	}
+
+	public float getLoadSize() {
+		return loadSize;
+	}
+
+	public void setLoadSize(float loadSize) {
+		this.loadSize = loadSize;
+	}
+	
+	
+}

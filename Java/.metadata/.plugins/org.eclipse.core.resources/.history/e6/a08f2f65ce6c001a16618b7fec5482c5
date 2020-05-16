@@ -1,0 +1,18 @@
+package poo.persona;
+
+public abstract class Estudiante extends Persona{
+	public abstract String studyLevel ="j";
+	public Estudiante(String name) {
+		super(name);
+	}
+	
+	public String getDescription() {
+		return "I am a student";
+	}
+
+	public String getStudyLevel() {
+		return studyLevel;
+	}
+
+	public abstract void setStudyLevel();
+}

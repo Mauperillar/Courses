@@ -1,0 +1,83 @@
+package poo;
+import java.util.Date;
+import java.util.GregorianCalendar;
+
+public class UsoEmpleado {
+
+	public static void main(String[] args) {
+		
+		Empleado mauricio = new Empleado("Mauricio", 400000, 2022,12,02);
+		mauricio.raiseSalary(10, true);
+		System.out.println(mauricio.getSalary());
+		
+		Empleado[] misEmpleados = new Empleado[3];
+		misEmpleados[0] = new Empleado("Juan", 30000,2021,11,02);
+		misEmpleados[1] = new Empleado("Peter", 40000,2022,11,02);
+		misEmpleados[2] = new Empleado("Camilo", 30000,2021,11,02);
+
+		for(Empleado e: misEmpleados) {
+			System.out.println(e.getId());
+		}
+
+		
+	}
+
+}
+
+class Empleado {
+
+	private static int countId = 0;
+	private final int id = ++countId;
+	private String name;
+	private float salary;
+	private Date fechaContrato;
+	
+	public Empleado(String name) {
+		this(name, 0, 2025,12,31); //Llama al otro constructor que cumpla con los parametros
+	}
+
+	public Empleado(String name, float sueldo, int altaContratoYear, int altaContratoMonth, int altaContratoDay) {
+		this.setName(name);
+		this.salary = sueldo;
+		GregorianCalendar calendar = new GregorianCalendar(altaContratoYear, altaContratoMonth-1, altaContratoDay);
+		this.fechaContrato = calendar.getTime();
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public float getSalary() {
+		return salary;
+	}
+
+	public void raiseSalary(float sueldo,boolean porcentaje) {
+		if(porcentaje) {
+			this.salary += this.salary*sueldo/100;
+		}else {
+			this.salary += sueldo;
+		}
+		
+	}
+	
+	public Date getFechaContrato() {
+		return fechaContrato;
+	}
+	
+	public void setFechaContrato(int altaContratoYear, int altaContratoMonth, int altaContratoDay) {
+		GregorianCalendar calendar = new GregorianCalendar(altaContratoYear, altaContratoMonth-1, altaContratoDay);
+		fechaContrato = calendar.getTime();
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public static int getCountId() {
+		return countId;
+	}
+}

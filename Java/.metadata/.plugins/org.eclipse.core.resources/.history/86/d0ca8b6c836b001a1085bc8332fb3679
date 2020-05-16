@@ -1,0 +1,14 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+//java.util.*;
+
+public class prueba {
+
+	public static void main(String[] args) {
+		Scanner nombre;
+		Locale local;
+
+	}
+
+}

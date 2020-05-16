@@ -1,0 +1,12 @@
+package poo.persona;
+
+import poo.persona.empleado.*;
+public class UsoPersonas {
+
+	public static void main(String[] args) {
+		Persona[] people = new Persona[4];
+		people[0] = new Empleado("Mauricio");
+
+	}
+
+}

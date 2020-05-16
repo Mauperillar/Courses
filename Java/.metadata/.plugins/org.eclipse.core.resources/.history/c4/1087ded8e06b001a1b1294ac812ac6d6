@@ -1,0 +1,17 @@
+
+public class Matrices {
+
+	public static void main(String[] args) {
+
+		int[][] matrix = { { 0, 1 }, { 2, 3 }, { 4, 5 } };
+
+		for (int fila = 0; fila < matrix.length; fila++) {
+			System.out.println();
+			for (int columna : matrix[fila]) {
+				System.out.print(columna + " ");
+			}
+		}
+
+	}
+
+}

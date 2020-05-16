@@ -1,0 +1,5 @@
+package poo.empleado;
+
+public class Jefe extends Empleado{
+
+}

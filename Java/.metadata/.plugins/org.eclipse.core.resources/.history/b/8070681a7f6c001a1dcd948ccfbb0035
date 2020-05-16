@@ -1,0 +1,16 @@
+package poo;
+
+public class Coche {
+	private int ctdRuedas;
+	private float sizeMotor;
+	private float largo;
+	private float ancho;
+
+	public Coche() {
+		ctdRuedas = 4;
+		largo = 1500.2f;
+		ancho = 500.3f;
+		sizeMotor = 100.5f;
+	}
+
+}

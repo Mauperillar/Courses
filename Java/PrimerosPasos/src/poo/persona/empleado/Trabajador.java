@@ -1,0 +1,75 @@
+package poo.persona.empleado;
+
+import java.util.Date;
+import java.util.GregorianCalendar;
+import poo.persona.Persona;
+
+public class Trabajador extends Persona implements Comparable, Trabajadores{
+
+	private static int countId = 0;
+	private final int id = ++countId;
+	private float salary;
+	private Date fechaContrato;
+	
+	public Trabajador(String name) {
+		this(name, 0, 2025,12,31); //Llama al otro constructor que cumpla con los parametros
+	}
+
+	public Trabajador(String name, float sueldo, int altaContratoYear, int altaContratoMonth, int altaContratoDay) {
+		super(name);
+		this.salary = sueldo;
+		GregorianCalendar calendar = new GregorianCalendar(altaContratoYear, altaContratoMonth-1, altaContratoDay);
+		this.fechaContrato = calendar.getTime();
+	}
+
+	public float getSalary() {
+		return salary;
+	}
+
+	public void raiseSalary(float sueldo,boolean porcentaje) {
+		if(porcentaje) {
+			this.salary += this.salary*sueldo/100;
+		}else {
+			this.salary += sueldo;
+		}
+		
+	}
+	
+	public Date getFechaContrato() {
+		return fechaContrato;
+	}
+	
+	public void setFechaContrato(int altaContratoYear, int altaContratoMonth, int altaContratoDay) {
+		GregorianCalendar calendar = new GregorianCalendar(altaContratoYear, altaContratoMonth-1, altaContratoDay);
+		fechaContrato = calendar.getTime();
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public static int getCountId() {
+		return countId;
+	}
+	
+	public String getDescription() {
+		return "hello";
+	}
+	
+	public int compareTo(Object miObjeto) {
+		Trabajador otroEmpleado = (Trabajador) miObjeto;
+		if(this.salary < otroEmpleado.salary) {
+			return -1;
+		}else if(this.salary > otroEmpleado.salary){
+			return 1;
+		}else {
+			return 0;
+		}
+	}
+	
+	
+	public float receiveBonus(float bonusMoney) {
+		return Trabajador.bonusMoney;
+	}
+	
+}

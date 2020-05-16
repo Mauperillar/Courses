@@ -1,0 +1,59 @@
+package poo.persona.empleado;
+
+import java.util.Date;
+import java.util.GregorianCalendar;
+import poo.persona.Persona;
+
+class Empleado extends Persona {
+
+	private static int countId = 0;
+	private final int id = ++countId;
+	private float salary;
+	private Date fechaContrato;
+	
+	public Empleado(String name) {
+		this(name, 0, 2025,12,31); //Llama al otro constructor que cumpla con los parametros
+	}
+
+	public Empleado(String name, float sueldo, int altaContratoYear, int altaContratoMonth, int altaContratoDay) {
+		super(name);
+		this.salary = sueldo;
+		GregorianCalendar calendar = new GregorianCalendar(altaContratoYear, altaContratoMonth-1, altaContratoDay);
+		this.fechaContrato = calendar.getTime();
+	}
+
+	public float getSalary() {
+		return salary;
+	}
+
+	public void raiseSalary(float sueldo,boolean porcentaje) {
+		if(porcentaje) {
+			this.salary += this.salary*sueldo/100;
+		}else {
+			this.salary += sueldo;
+		}
+		
+	}
+	
+	public Date getFechaContrato() {
+		return fechaContrato;
+	}
+	
+	public void setFechaContrato(int altaContratoYear, int altaContratoMonth, int altaContratoDay) {
+		GregorianCalendar calendar = new GregorianCalendar(altaContratoYear, altaContratoMonth-1, altaContratoDay);
+		fechaContrato = calendar.getTime();
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public static int getCountId() {
+		return countId;
+	}
+	
+	public String description() {
+		return "hello";
+	}
+	
+}
